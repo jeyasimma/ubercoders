@@ -20,6 +20,9 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
+// Select the username element
+//const userNameElem = document.getElementById("userName");
+
 onAuthStateChanged(auth, (user) => {
   if (user) {
     document.getElementById(
